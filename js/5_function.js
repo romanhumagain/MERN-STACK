@@ -55,15 +55,13 @@ const subtraction = function(a, b){
 
 console.log(subtraction(12,8))
 
-
-
 // constructor function
 
 function Person(name, age){
   this.name = name;
   this.age = age;
-
 }
 
 let person = new Person("Roman", 20)
 console.log(person.name)
+
