@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Demo</title>
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+
+    <header>
+        <h1>CSS Selectors Demo</h1>
+    </header>
+
+    <div class="container">
+        <h2 class="heading">Pseudo-class Selectors</h2>
+        <p><a href="#">Hover over this link</a></p>
+        <p><a href="https://romanhumagain.com.np" target="_blank">Visited link example</a></p>
+        <form>
+            <label for="name">Focus on this input:</label>
+            <input type="text" id="name" name="name">
+        </form>
+
+        <h2>Pseudo-element Selectors</h2>
+        <p>First line and first letter of this paragraph are styled using pseudo-elements. CSS pseudo-elements are used to style specific parts of an element, adding more fine-grained control over your web page's appearance.</p>
+        <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+
+        <h2>Attribute Selectors</h2>
+        <p>Attribute selectors allow you to style elements based on their attributes. This can be particularly useful for styling form elements or links.</p>
+        <p><a href="https://romanhumagain.com.np" target="_self">Link with target="_self"</a></p>
+        <p><a href="https://romanhumagain.com.np" target="_blank">Link with target="_blank"</a></p>
+        <form>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <input type="button" value="Submit">
+        </form>
+
+        <h2>Combinator Selectors</h2>
+        <p>Combinator selectors allow you to select elements based on their relationship to other elements. They can target elements that are descendants or direct children of a specified element.</p>
+        <div>
+            <p>This paragraph is inside a div (Descendant Selector).</p>
+            <p>This paragraph is also inside a div (Child Selector).</p>
+        </div>
+        <p>This paragraph is outside the div.</p>
+    </div>
+
+
+</body>
+</html>

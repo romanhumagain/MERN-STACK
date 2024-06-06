@@ -1,0 +1,27 @@
+*{
+  font-size: x-large;
+  
+
+}
+
+.text{
+  color: aqua;
+}
+
+.name{
+  color:cadetblue !important
+}
+
+.lorem{
+  color:darkred;
+  font-weight: 400;
+  border: 1px solid black;
+  border-radius: 10%;
+}
+
+table,
+td,
+th {
+  border: 1px solid green;
+  border-collapse: collapse;
+}

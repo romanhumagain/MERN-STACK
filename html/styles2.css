@@ -1,0 +1,29 @@
+#div-1, #div-2, #p-3 {
+  border: 1px solid yellow;
+}
+
+#ai:link{
+  color: red;
+}
+
+#ai:visited{
+  color: rgb(255, 140, 0);
+}
+
+#ai:hover{
+  color: cadetblue;
+}
+
+#p-3::first-letter{
+  text-transform: uppercase;
+  font-size: 50px;
+  color: red;
+}
+#p-3::first-line{
+  font-size: small;
+}
+
+input[type="text"]{
+  color: red;
+  font-size: larger;
+}
