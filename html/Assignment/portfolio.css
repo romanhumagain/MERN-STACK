@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #373A40;
+}
+
+nav{
+  background-color: #5d6168;
+  color: #EEEEEE;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+}
+
+ul{
+  display: flex;
+  justify-content: space-between;
+}
+.menu{
+  display: flex;
+  gap: 70px;
+  margin-right: 100px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: sans-serif
+}
+li a:hover{
+  color: rgb(243, 62, 62);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+li{
+  list-style: none;
+}
+li a{
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(237, 234, 234);
+}
+
+.heading-name{
+  font-size: 35px;
+  margin-left: 10px;
+}
+
+.heading-name ::first-letter{
+  color: #fb0a0a;
+  font-size: xx-large;
+}
+
+/* fot the home section */
+#home{
+  height:702px;
+}
+.home-content{
+  display: flex;
+  justify-content: center;
+  height:702px;
+}
+
+.img-section{
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  margin-top: 50px;
+}
+
+.my-img{
+  text-align: center;
+  margin-top: 160px;
+  margin-left: 320px;
+
+}
+.my-img img{
+  width: 240px;
+  height: 240px;
+}
+
+
+.content-section{
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  text-align: center;
+  margin-top: 50px;
+
+}
+.content{
+  margin-right: 200px;
+
+}
+.top, .top p{
+  margin-top: 200px;
+  font-size: 26px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.name{
+  font-size: 40px;
+  font-family:serif;
+  font-weight: bold;
+  color: red;
+}
+
+.stack{
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.social-logo{
+  margin-top: 18px;
+  font-size: 40px
+}
+.social-logo i:first-child{
+  color: black;
+}
+
+.github:hover{
+  color: black;
+}
+
+.social-logo .linkedin:hover{
+  color: rgb(36, 20, 209);
+}
+
+/* for about section */
+#about{
+  display: flex;
+  justify-content: center;
+  height:640px;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+}
+
+.about-content{
+  width: 800px;
+  padding: 40px;
+  margin-bottom: 250px;
+  text-align: justify;
+}
+
+.first{
+  font-family: serif;
+  /* line-height: 25px; */
+  font-size: 24px;
+  margin-bottom: 4px;
+  
+}
+.second{
+  font-family: serif;
+  /* line-height: 25px; */
+  font-size: 22px;
+  margin-bottom: 3px;
+
+  
+}
+.third{
+  font-family: sans-serif;
+  color: rgb(52, 51, 51);
+  font-weight: light;
+  margin-top: 10px;
+  font-size: 18px;
+  
+}
+
+.about-content h1{
+  font-size: 38px;
+  margin-bottom: 28px;
+  color: red;
+}

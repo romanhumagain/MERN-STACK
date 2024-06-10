@@ -1,0 +1,59 @@
+/* descendent selector */
+/* it changes all the h1 element inside the main-div */
+/* .main-div h1{
+  background-color: black;
+  color: red;
+} */
+
+/* child selector */
+/* .main-div>h1{
+  background-color: black;
+  color: red;
+} */
+
+
+/* adjascent selector */
+h1 + h2 {
+  background-color: yellow;
+  color: white;
+}
+
+/* */
+h1 ~ h2{
+  background-color: green;
+  color: white;
+}
+
+/* css units */
+/* 
+px, em, rem, vh, vmin, %
+
+
+*/
+
+/* RELATIVE LENGTHS */
+/* 
+
+em  : --- Relative to the size of its direct parent
+rem :-- Relative to the size of its root parent
+vh :--- Relative to 1% of the height of the viewport
+%: ---- Relative to the parent element
+
+*/
+.main-div{
+  /* background-image: url('https://imgs.search.brave.com/enXzlkq6kvkdhBjHhK4WCUqLoLDkRSR_qu_Hy7kPQBc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAxLzgyLzg3Lzg0/LzM2MF9GXzE4Mjg3/ODQ3NF9kdVF6VkFt/MmRnMk13S2Y0dURy/eVRabXV4Rzg4bGp0/Ri5qcGc'); */
+  /* background-repeat: no-repeat; */
+  height: 100px;
+  /* background-position: 50px 100px; */
+}
+
+.second-div{
+  background-image: url('https://imgs.search.brave.com/enXzlkq6kvkdhBjHhK4WCUqLoLDkRSR_qu_Hy7kPQBc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAxLzgyLzg3Lzg0/LzM2MF9GXzE4Mjg3/ODQ3NF9kdVF6VkFt/MmRnMk13S2Y0dURy/eVRabXV4Rzg4bGp0/Ri5qcGc');
+  color: white;
+  width: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+
+}
