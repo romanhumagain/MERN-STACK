@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.navbar-links {
+  display: flex;
+  margin-right: auto;
+}
+
+.navbar-links ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-links .nav-item {
+  margin-left: 20px;
+}
+
+.navbar-links .nav-item a {
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.navbar-end ul {
+  display: flex;
+  list-style-type: none;
+  margin-left: auto; 
+}
+
+.navbar-end .nav-item {
+  margin-left: 20px;
+}
+
+.navbar-end .nav-item a {
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.navbar-links-toggle{
+  color: white;
+  font-size: x-large;
+  align-items: center;
+
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .navbar-links {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .navbar-end {
+    margin-left: 0;
+    margin-top: 10px; 
+  }
+
+  .navbar-links ul, .navbar-end ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-links .nav-item, .navbar-end .nav-item {
+    margin: 10px 0;
+  }
+
+  .navbar-links{
+    display: none;
+  }
+
+  .navbar-end{
+    display: none;
+  }
+
+  .navbar-links-toggle{
+
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  margin-top: 100px;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+label {
+  display: block;
+  /* margin-bottom: 8px; */
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p{
+  font-weight: lighter;
+  text-align: center;
+}
+
+.btn-text{
+  margin-top: 15px;
+  font-weight: lighter;
+}
+
+a{
+  text-decoration: none;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Grid Layout</title>
+</head>
+<style>
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+  }
+
+  .navbar-brand {
+    color: #fff;
+    font-size: 1.5em;
+  }
+
+  .navbar-links {
+    display: flex;
+  }
+
+  .nav-item {
+    margin-left: 20px;
+  }
+
+  .nav-item a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 16px;
+    transition: background-color 0.3s;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .navbar-end {
+    display: flex;
+  }
+
+  .card-container {
+    /* background-color: beige; */
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    background-color: rgb(252, 252, 252);
+    gap: 10px;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .img-header {
+    background-color: rgb(212, 211, 211);
+    width: 300px;
+    height: 160px;
+  }
+
+  .title {
+    margin: 20px 0px 0px 10px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .desc{
+    margin: 20px 0px 0px 10px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .footer-btn{
+    width: 100%;
+    border: none;
+    padding: 10px 5px 10px 5px;
+    position: relative;
+    margin-top: 75px;
+    background-color: rgb(138, 138, 138);
+    color: white;
+    font-weight: bold;
+   
+  }
+
+  
+</style>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-brand">My Website</div>
+    <ul class="navbar-links">
+      <li class="nav-item"><a href="#">Home</a></li>
+      <li class="nav-item"><a href="#">About</a></li>
+      <li class="nav-item"><a href="#">Services</a></li>
+      <li class="nav-item"><a href="#">Contact</a></li>
+    </ul>
+    <ul class="navbar-end">
+      <li class="nav-item"><a href="#">Login</a></li>
+    </ul>
+  </nav>
+
+  <div class="card-container">
+
+    <div class="card">
+      <div class="img-header">
+        <!-- <img src="../html/Cloned_Website/assets/Images/i-walk-a-lonely-road.webp" alt=""> -->
+      </div>
+      <div class="title">
+        Card Title 1
+      </div>
+
+      <div class="desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, consectetur!
+      </div>
+      <div class="footer">
+        <button class="footer-btn">Read More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img-header">
+        <!-- <img src="../html/Cloned_Website/assets/Images/i-walk-a-lonely-road.webp" alt=""> -->
+      </div>
+      <div class="title">
+        Card Title 2
+      </div>
+
+      <div class="desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, consectetur!
+      </div>
+      <div class="footer">
+        <button class="footer-btn">Read More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img-header">
+        <!-- <img src="../html/Cloned_Website/assets/Images/i-walk-a-lonely-road.webp" alt=""> -->
+      </div>
+      <div class="title">
+        Card Title 3
+      </div>
+
+      <div class="desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, consectetur!
+      </div>
+      <div class="footer">
+        <button class="footer-btn">Read More</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img-header">
+        <!-- <img src="../html/Cloned_Website/assets/Images/i-walk-a-lonely-road.webp" alt=""> -->
+      </div>
+      <div class="title">
+        Card Title 4
+      </div>
+
+      <div class="desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, consectetur!
+      </div>
+      <div class="footer">
+        <button class="footer-btn">Read More</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

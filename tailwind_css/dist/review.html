@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GizmoHub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMU2O7BzBi47q4yOG9VbJmoeqkFR9euhANh3V9F" crossorigin="anonymous">
+  <!-- Additional FontAwesome styles for Pro features (if needed) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css" integrity="sha384-5T30MltT6gMGaqZDD2bd8fzII8mTlOdR9HPrN1V5F0igPlBz9yD5By2W8PibZ/Dn" crossorigin="anonymous">
+
+
+  </head>
+
+<body>
+  <div class="h-screen bg-slate-100">
+    <div class="bg-zinc-700">
+      <nav class="w-[95%] mx-auto flex justify-between p-4">
+        <div>
+          <p class="font-bold text-white  text-xl md:text-2xl"><span>Gizmo</span><span class="text-red-600">Hub</span>
+          </p>
+        </div>
+
+        <div
+          class="nav-links bg-slate-300 absolute min-h-[60vh] left-0 top-[-100%] w-full items-center px-5 transition-all duration-300 ease-in-out md:static md:min-h-fit md:w-fit md:bg-transparent">
+          <ul class="flex flex-col md:flex-row mt-10 md:mt-auto md:items-center md:gap-[4vw] gap-6 md:w-auto ">
+            <li class="text-lg text-white font-semibold hover:text-gray-300">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="text-lg text-white  font-semibold hover:text-gray-300">
+              <a href="./product.html">Product</a>
+            </li>
+            <li class="text-lg text-white  font-semibold hover:text-gray-300">
+              <a href="./review.html">Reviews</a>
+            </li>
+            <li class="text-lg text-white  font-semibold hover:text-gray-300">
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <button class="bg-red-500 hover:bg-red-600 text-white font-semibold rounded-full p-1 px-[9px] shadow">Sign
+            In</button>
+          <i class="show-menu ri-menu-line text-2xl md:hidden cursor-pointer" onclick="handleToggleMenu()"></i>
+          <i class="show-cross ri-close-line text-2xl md:hidden cursor-pointer hidden" onclick="handleToggleMenu()"></i>
+        </div>
+      </nav>
+    </div>
+
+
+    <div class="bg-slate-200 p-10 lg:h-screen  h-auto ">
+      <h1 class="text-gray-600 text-3xl text-center font-bold">Our Testimonials</h1>
+      <div class="max-w-[95%] mx-auto bg-slate-200 p-7 rounded-3xl grid lg:grid-cols-3 gap-5 mt-14">
+
+        <div class="bg-gray-300 grid gap-2 sm:grid-cols-12 rounded-3xl ">
+          <div class="  p-4 sm:col-span-4 flex items-center text-center mx-auto">
+            <img src="https://cdn.pixabay.com/photo/2020/10/09/04/56/woman-5639513_640.jpg " class="items-center h-20 w-20 rounded-full">
+          </div>
+
+          <div class=" p-3 py-3 mt-4 sm:col-span-8 ">
+            <div class= " text-center sm:text-left">
+              <i class="ri-star-fill" style="color: #f5c414;"></i>
+              <i class="ri-star-fill" style="color: #f5c414;"></i>
+              <i class="ri-star-fill" style="color: #f5c414;"></i>
+
+              <i class="ri-star-fill" style="color: #ADB8C2;"></i>
+              <i class="ri-star-fill" style="color: #ADB8C2;"></i>
+            </div>
+            <div class="">"I love the 5G connectivity on the GizmoMax Pro. It makes downloading and streaming content incredibly fast. The design is sleek and the device feels premium</div>
+          </div>
+
+        </div>
+
+        <div class="bg-gray-300 grid gap-2 sm:grid-cols-12 rounded-3xl ">
+          <div class="  p-4 sm:col-span-4 flex items-center text-center mx-auto">
+            <img src="https://cdn.pixabay.com/photo/2016/03/27/16/54/face-1283106_640.jpg" class="items-center h-20 w-20 rounded-full">
+          </div>
+
+          <div class=" p-3 py-3 mt-4 sm:col-span-8 ">
+            <div class=  "text-center sm:text-left">
+              <i class="ri-star-fill" style="color: #f5c414;"></i>
+              <i class="ri-star-fill" style="color: #f5c414;"></i>
+              <i class="ri-star-fill" style="color: #f5c414;"></i>
+
+              <i class="ri-star-fill" style="color: #ADB8C2;"></i>
+              <i class="ri-star-fill" style="color: #ADB8C2;"></i>
+            </div>
+            <div class="">While the GizmoMax Pro is powerful, I've faced some issues with the software updates. The support team is responsive but the process could be smoother.</div>
+          </div>
+
+        </div>
+
+        <div class="bg-gray-300 grid gap-2 sm:grid-cols-12 rounded-3xl ">
+          <div class="  p-4 sm:col-span-4 flex items-center text-center mx-auto">
+            <img src="https://cdn.pixabay.com/photo/2021/06/25/13/22/girl-6363743_640.jpg" class="items-center h-20 w-20 rounded-full">
+          </div>
+
+          <div class=" p-3 py-3 mt-4 sm:col-span-8 ">
+            <div class= "text-center sm:text-left">
+              <i class="ri-star-fill" style="color: #f5c414;"></i>
+              <i class="ri-star-fill" style="color: #f5c414;"></i>
+              <i class="ri-star-fill" style="color: #f5c414;"></i>
+              <i class="ri-star-fill" style="color: #f5c414;"></i>
+
+              <i class="ri-star-fill" style="color: #ADB8C2;"></i>
+            </div>
+            <div class="">GizmoMax Pro has significantly improved my daily workflow with its speed and efficiency. The battery life is decent, but the display quality is unparalleled</div>
+          </div>
+
+        </div>
+
+        <div class="bg-gray-300 grid gap-2 sm:grid-cols-12 rounded-3xl ">
+          <div class="  p-4 sm:col-span-4 flex items-center text-center mx-auto">
+            <img src="https://cdn.pixabay.com/photo/2017/05/31/09/09/woman-2359562_640.jpg " class="items-center h-20 w-20 rounded-full">
+          </div>
+
+          <div class=" p-3 py-3 mt-4 sm:col-span-8 ">
+            <div class=  "text-center sm:text-left">
+              <i class="ri-star-fill" style="color: #f5c414;"></i>              
+              <i class="ri-star-fill" style="color: #ADB8C2;"></i>
+              <i class="ri-star-fill" style="color: #ADB8C2;"></i>
+
+
+              <i class="ri-star-fill" style="color: #ADB8C2;"></i>
+              <i class="ri-star-fill" style="color: #ADB8C2;"></i>
+            </div>
+            <div class="">The camera on the GizmoMax Pro is outstanding! It captures every detail perfectly. The AI integration adds an extra layer of convenience to my daily tasks</div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="bg-zinc-600 bottom-0 h-9 ">
+      <footer class="bg-zinc-700 w-full sm:p-5 md:p-10 ">
+        <div class="flex flex-col  sm:flex-row   sm:justify-between px-20 gap-10">
+          <div class="mt-10 sm:mt-0">
+            <p class="text-2xl font-bold text-white mb-3">GizmoHub</p>
+            <p class="text-md  text-white ">Email: info@gizmohub.com</p>
+            <p class="text-md  text-white">Phone: (123) 4560789</p>
+          </div>
+
+          <div>
+            <p class="text-2xl font-bold text-white mb-3">Quick Links</p>
+
+            <p class="text-md  text-white ">Home</p>
+            <p class="text-md  text-white ">Product</p>
+            <p class="text-md  text-white ">Reviews</p>
+            <p class="text-md  text-white ">Contact</p>
+          </div>
+
+          <div>
+            <p class="text-2xl font-bold text-white mb-3">Follow Us</p>
+            <div class="flex text-2xl text-white">
+              <i class="ri-facebook-circle-fill"></i>
+              <i class="ri-instagram-fill"></i>
+              <i class="ri-linkedin-box-fill"></i>
+              <i class="ri-twitter-x-fill"></i>
+            </div>
+          </div>
+        </div>
+
+        <hr class="text-white mt-10">
+        <div class="text-white text-center mt-5 my-1">
+          <p>&copy 2024 GizmoHub. All Rights Reserved</p>
+          <p>Privacy Policy | Terms of Service</p>
+        </div>
+
+      </footer>
+
+    </div>
+  </div>
+  <script>
+    const navLinks = document.querySelector('.nav-links');
+    const showMenu = document.querySelector('.show-menu');
+    const closeMenu = document.querySelector('.show-cross');
+
+    const handleToggleMenu = () => {
+      navLinks.classList.toggle('top-[9%]');
+      showMenu.classList.toggle('hidden');
+      closeMenu.classList.toggle('hidden');
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Demonstration</title>
+    <style>
+        .container {
+            margin: 20px;
+        }
+        .event-feedback {
+            margin-top: 10px;
+            font-weight: bold;
+            color: green;
+        }
+        .hover-area {
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function handleChange(event) {
+            document.getElementById('changeFeedback').textContent = 'Input changed to: ' + event.target.value;
+        }
+
+        function handleClick() {
+            document.getElementById('clickFeedback').textContent = 'Button clicked!';
+        }
+
+        function handleMouseOver() {
+            document.getElementById('mouseOverFeedback').textContent = 'Mouse is over the text!';
+        }
+
+        function handleMouseOut() {
+            document.getElementById('mouseOutFeedback').textContent = 'Mouse left the text!';
+        }
+
+        function handleKeyDown(event) {
+            document.getElementById('keyDownFeedback').textContent = 'Key pressed: ' + event.key;
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <label for="inputField">Change event:</label>
+    <input type="text" id="inputField" oninput="handleChange(event)">
+    <div id="changeFeedback" class="event-feedback"></div>
+</div>
+
+<div class="container">
+    <button onclick="handleClick()">Click me</button>
+    <div id="clickFeedback" class="event-feedback"></div>
+</div>
+
+<div class="container">
+    <div class="hover-area" onmouseover="handleMouseOver()" onmouseout="handleMouseOut()">
+        Hover over this text
+    </div>
+    <div id="mouseOverFeedback" class="event-feedback"></div>
+    <div id="mouseOutFeedback" class="event-feedback"></div>
+</div>
+
+<div class="container">
+    <label for="keyInput">Key down event:</label>
+    <input type="text" id="keyInput" onkeydown="handleKeyDown(event)">
+    <div id="keyDownFeedback" class="event-feedback"></div>
+</div>
+
+</body>
+</html>

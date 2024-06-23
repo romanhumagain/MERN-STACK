@@ -1,58 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navbar</title>
+  <link rel="stylesheet" href="./navbar.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
-<style>
-  .logo{
-    font-weight: bolder;
-    font-size: x-large;
-  }
- li{row-gap: 100px;}
 
-  li{
-    list-style-type: none;
-    display: inline;
-    /* gap: 50px; */
-  }
-
-  .end-menu{
-    display: inline;
-    float: right;
-  }
-   .register,.login{
-    margin-right: 10px;
-  }
-
-  .nav-menu{
-    display: inline;
-    margin-left: 200px;
-  }
-
-
-
-</style>
 <body>
-  <nav>
-    <ul>
-      <li class="logo">MyNav</li>
+  <nav class="navbar">
+    <div class="navbar-brand">Navbar</div>
 
-      <div class="nav-menu">
-      <li>Home</li>
-      <li>About</li>
-      <li>Contact</li>
+    <div class="navbar-links navbar-links-toggle" onclick="classToggle()">
+      <span><i class="ri-menu-2-fill"></i></span>
     </div>
 
-      <div class="end-menu">
-        <li class="login">Login</li>
-        <li class="register">Register</li>
+    <div class="navbar-links">
+      <ul>
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">About</a></li>
+        <li class="nav-item"><a href="#">Services</a></li>
+        <li class="nav-item"><a href="#">Contact</a></li>
+      </ul>
     </div>
-      
-
-    </ul>
+    <div class="  navbar-end">
+      <ul>
+        <li class="nav-item"><a href="#">Login</a></li>
+        <li class="nav-item"><a href="#">Register</a></li>
+      </ul>
+    </div>
   </nav>
-  
+
+  <div class="main">
+
+    <div class="container">
+      <form autocomplete="off">
+        <label for="username">Username</label> <br>
+        <input type="text" id="username" placeholder="Enter Your Username"><br>
+
+        <label for="email">Email</label> <br>
+        <input type="email" id="email" placeholder="Enter Your Email"><br>
+
+        <label for="password">Password</label> <br>
+        <input type="password" id="password" placeholder="Enter Your Password"><br>
+
+        <button type="submit">Submit</button>
+        <p class="btn-text">Already Have Account? <a href="">Login</a></p>
+      </form>
+
+      <script>
+        function classToggle() {
+          console.log("toogle menu")
+          const navs = document.querySelectorAll('.nav-item')
+
+          navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+        }
+
+        document.querySelector('.Navbar__Link-toggle')
+          .addEventListener('click', classToggle);
+          
+      </script>
+    </div>
+  </div>
 </body>
+
 </html>

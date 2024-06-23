@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dentytech</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Gilroy;
+    box-sizing: border-box;
+  }
+
+  .navbar {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(205, 205, 205);
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .nav-header {
+    display: flex;
+  }
+
+  .end-items {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .menu-btn {
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid;
+    font-weight: bold;
+  }
+
+  .menu-icon {
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid;
+  }
+
+  .dent-icon {
+    background-color: orangered;
+    padding: 8px;
+    border-radius: 50%;
+  }
+
+  .nav-header p {
+    margin-top: 8px;
+    margin-left: 4px;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .signup {
+    margin-right: 10px;
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid;
+    font-weight: bold;
+  }
+
+  .login {
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid;
+    background-color: rgb(252, 84, 24);
+    font-weight: bold;
+    color: white;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fafafa;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer p {
+    margin-left: 20px;
+    font-weight: bold;
+  }
+
+  .footer .end-menu {
+    margin-right: 20px;
+  }
+
+  .icons .icon {
+    background-color: orangered;
+    padding: 4px;
+    color: white;
+    border-radius: 50%;
+  }
+
+  .main {
+    text-align: center;
+    /* position: relative; */
+    padding: 50px 0;
+
+  }
+
+  .main p {
+    font-size: 5rem;
+    font-weight: bold;
+    position: absolute;
+    right: 50%;
+    bottom:50%;
+    transform: translate(50%, 50%);
+    z-index: 1;
+
+    
+  }
+  .main .images{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* .images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+
+  .images img {
+    width: 200px;
+    position: absolute;
+    transition: transform 0.3s;
+    
+  }
+
+  .images img:nth-child(1) {
+    transform: rotate(-15deg);
+    z-index: 5;
+  }
+
+  .images img:nth-child(2) {
+    transform: rotate(-5deg);
+    top: 20px;
+    left: 20px;
+    z-index: 4;
+  }
+
+  .images img:nth-child(3) {
+    transform: rotate(5deg);
+    top: 40px;
+    left: 40px;
+    z-index: 3;
+  }
+
+  .images img:nth-child(4) {
+    transform: rotate(15deg);
+    top: 60px;
+    left: 60px;
+    z-index: 2;
+  }
+</style>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <button type="button" class="menu-btn">Menu</button>
+      <i class="ri-menu-2-line menu-icon"></i>
+    </div>
+
+    <div class="nav-header">
+      <i class="ri-tooth-fill dent-icon"></i>
+      <p>DENTYTECH</p>
+    </div>
+
+    <div class="end-items">
+      <button type="button" class="signup">Signup</button>
+      <button type="button" class="login">Login</button>
+    </div>
+  </nav>
+
+  <div class="main">
+    <div class="images">
+      <img src="./assets/Images/pexels-photo-1386604.webp" alt="Image 4">
+
+      <img src="./assets/Images/i-walk-a-lonely-road.webp" alt="Image 1">
+      <img src="./assets/Images/thumb16.webp" alt="Image 2">
+      <img src="./assets/Images/two-tone-ink-cloud.webp" alt="Image 3">
+    </div>
+    <p>Our Advantages</p>
+  </div>
+
+  <footer class="footer">
+    <p>Your Smile, Our Position</p>
+    <div class="end-menu">
+      <div class="icons">
+        <i class="ri-instagram-line icon"></i>
+        <i class="ri-youtube-line icon"></i>
+        <i class="ri-facebook-box-line icon"></i>
+        <p>Best Startup of 2024</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

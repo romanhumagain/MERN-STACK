@@ -1,0 +1,69 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+main {
+  padding: 2rem;
+}
+
+.search-bar {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.book-list-container {
+  margin-bottom: 1rem;
+}
+
+.book-list-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.book-list-container li {
+  background: white;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-list-container li.favorite {
+  background: #ffe599;
+}
+
+.book-actions {
+  text-align: center;
+}
+
+.book-actions input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.book-actions button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
